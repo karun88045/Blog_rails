@@ -1,0 +1,35 @@
+<h4 class="py-2 text-center">Get In Touch</h4>
+<div class="container">
+	<div class="row shadow p-3">
+		<div class="col-md-6 col-lg-6 col-sm-12 card">
+			<%= form_with model: @employees do |form| %>
+			<div class="mb-3">
+				<%= form.label :Name , class: 'mb-2' %>
+				<%= form.text_field :name , class: 'form-control' %>
+			</div>
+			<div class="mb-3">
+				<%= form.label :Email , class: 'mb-2' %>
+				<%= form.email_field :email , class: 'form-control' %>
+			</div>
+			<div class="mb-3">
+				<%= form.label :Password , class: 'mb-2' %>
+				<%= form.password_field :password , class: 'form-control' %>
+			</div>
+			<div class="mb-3">
+				<%= form.label :Phone , class: 'mb-2' %>
+				<%= form.number_field :phone , class: 'form-control' %>
+			</div>
+			<div class="mb-3">
+				<%= form.label :Address , class: 'mb-2' %>
+				<%= form.text_field :address , class: 'form-control' %>
+			</div>
+			<div class="mb-3">
+				<%= form.submit class: 'btn btn-primary' %>
+			</div>
+		</div>
+		<div class="col-md-6 col-lg-6 col-sm-12">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.9122464698785!2d75.72115590988955!3d26.906279976553623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db59134cef689%3A0x87a1677f83446523!2sRVJ%20Infotech!5e0!3m2!1sen!2sin!4v1681901091220!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+	<% end %>
+</div>

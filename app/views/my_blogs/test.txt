@@ -1,0 +1,61 @@
+          <ul class="shadow p-4" style="list-style:none;">
+            <style>
+            ul li a{text-decoration:none;color:black;}
+            </style>
+              <h2>Categories</h2>
+                <% form_with model:@post, method: :post do |form| %>
+                 <%= form.select :category_id,Category.all.pluck(:title, :id),{prompt: 'select'},{class:'form-control'} %>
+                <% end %>
+            </ul>
+
+
+
+                     <ul class="shadow p-4" style="list-style:none;">
+              <style>
+              ul li a{text-decoration:none;color:black;}
+              </style>
+                  <h2>Categories</h2>
+                  <%= form_with url: "/search", method: :get do |form| %>
+                  <%= form.select :category_id,Category.all.pluck(:title, :id),{prompt: 'select'},{class:'form-control'} %>
+                  <%= form.submit "Search", class: "my-2 form-control btn btn-primary" %>
+                  <% end %>
+            </ul>
+
+
+
+                       <ul class="shadow p-4" style="list-style:none;">
+            <style>
+            ul li a{text-decoration:none;color:black;}
+            </style>
+
+
+            
+            <ul class="shadow p-4" style="list-style:none;">
+              <style>
+              ul li a{text-decoration:none;color:black;}
+              </style>
+                  <h2>Categories</h2>
+                  <%= form_with url: "/search", method: :get do |form| %>
+                  <%= form.select :category_id,Category.all.pluck(:title, :id),{prompt: 'select'},{class:'form-control'} %>
+                  <%= form.submit "Search", class: "my-2 form-control btn btn-primary" %>
+                  <% end %>
+            </ul>
+  <%= (p.title) %>
+                      </a>
+                  </div>
+              </li>
+              <% end %>
+            </ul>
+
+
+            
+            <ul class="shadow p-4" style="list-style:none;">
+              <style>
+              ul li a{text-decoration:none;color:black;}
+              </style>
+                  <h2>Categories</h2>
+                  <%= form_with url: "/search", method: :get do |form| %>
+                  <%= form.select :category_id,Category.all.pluck(:title, :id),{prompt: 'select'},{class:'form-control'} %>
+                  <%= form.submit "Search", class: "my-2 form-control btn btn-primary" %>
+                  <% end %>
+            </ul>
